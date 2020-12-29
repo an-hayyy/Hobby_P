@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">짱구</string>
+    <string name="title_home">홈</string>
+    <string name="title_pop">인기</string>
+    <string name="title_com">커뮤니티</string>
+    <string name="upload_post">후기를 작성해주세요</string>
+    <string name="upload_title">제목을 작성해주세요</string>
+    
+    <string name="fragment_home">fragment_home</string>
+    <string name="fragment_com">fragment_com</string>
+    <string name="fragment_my">fragment_my</string>
+</resources>

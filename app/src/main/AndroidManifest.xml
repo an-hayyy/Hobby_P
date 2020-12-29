@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android1016">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rogo"
+        android:label="하비"
+        android:roundIcon="@drawable/rogo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CookActivity"/>
+        <activity
+            android:name=".DesignActivity"/>
+        <activity
+            android:name=".DrawingActivity"/>
+        <activity
+            android:name=".ExerciseActivity"/>
+        <activity
+            android:name=".MakeupActivity"/>
+        <activity
+            android:name=".TravelActivity"/>
+        --<activity
+            android:name=".MainActivity"/>
+        <activity
+            android:name=".SignupActivity2"/>
+        <activity
+            android:name=".ui.com.UploadActivity"/>
+        <activity
+            android:name=".ui.com.ReviewActivity"/>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

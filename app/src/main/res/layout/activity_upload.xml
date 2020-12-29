@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/upload_title"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/select_img"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+    <EditText
+        android:id="@+id/et_letter"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/upload_post"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_img" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FBD14B"
+        android:text="업로드"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/et_letter"
+        app:layout_constraintTop_toBottomOf="@+id/et_letter" />
+
+    <ImageButton
+        android:id="@+id/btn_upload"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery2"
+        android:text="갤러리"
+        app:layout_constraintEnd_toStartOf="@+id/btn_finish"
+        app:layout_constraintTop_toTopOf="@+id/btn_finish"
+        tools:ignore="MissingConstraints" />
+
+    <!--<TextView
+        android:id="@+id/tv_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_letter" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

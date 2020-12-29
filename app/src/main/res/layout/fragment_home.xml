@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/in_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:ci_drawable="@drawable/black_radius"
+                app:ci_height="7dp"
+                app:ci_margin="4dp"
+                app:ci_width="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                tools:ignore="MissingConstraints" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mcook3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/mcook3"
+                app:civ_border_color="#a593e0"
+                app:layout_constraintEnd_toStartOf="@+id/image_mdesign1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                tools:ignore="MissingConstraints" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mdesign1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mdesign1"
+                app:layout_constraintEnd_toStartOf="@+id/image_mdrawing2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/image_mcook3"
+                app:layout_constraintTop_toTopOf="@+id/image_mcook3"
+                tools:ignore="MissingConstraints" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mdrawing2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mdrawing2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/image_mdesign1"
+                app:layout_constraintTop_toTopOf="@+id/image_mdesign1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mexercise1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/mexercise1"
+                app:layout_constraintEnd_toStartOf="@+id/image_mmakeup1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_mcook3" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mmakeup1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mmakeup1"
+                app:layout_constraintEnd_toStartOf="@+id/image_mtravel1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/image_mexercise1"
+                app:layout_constraintTop_toTopOf="@+id/image_mexercise1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mtravel1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mtravel1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/image_mmakeup1"
+                app:layout_constraintTop_toTopOf="@+id/image_mmakeup1" />
+
+            <TextView
+                android:id="@+id/text_cook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="요리"
+                android:textColor="#A593e0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_mcook3" />
+
+            <TextView
+                android:id="@+id/text_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:text="수공예"
+                android:textColor="#A593e0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/text_cook"
+                app:layout_constraintTop_toTopOf="@+id/text_cook"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_drawing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:text="미술"
+                android:textColor="#A593e0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/text_design"
+                app:layout_constraintTop_toTopOf="@+id/text_design"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="운동"
+                android:textColor="#A593e0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/text_cook"
+                app:layout_constraintTop_toBottomOf="@+id/image_mexercise1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_makeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:text="뷰티"
+                android:textColor="#A593e0"
+
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/text_exercise"
+                app:layout_constraintTop_toTopOf="@+id/text_exercise"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text_travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여행"
+                android:textColor="#A593e0"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/text_drawing"
+                app:layout_constraintTop_toTopOf="@+id/text_makeup"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
