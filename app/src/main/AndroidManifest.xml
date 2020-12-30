@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.android1016">
+    package="com.ex.hobby">
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <activity
-            android:name=".LoginActivity">
+            android:name="com.ex.hobby.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,25 +20,25 @@
         </activity>
 
         <activity
-            android:name=".CookActivity"/>
+            android:name="com.ex.hobby.CookActivity"/>
         <activity
-            android:name=".DesignActivity"/>
+            android:name="com.ex.hobby.DesignActivity"/>
         <activity
-            android:name=".DrawingActivity"/>
+            android:name="com.ex.hobby.DrawingActivity"/>
         <activity
-            android:name=".ExerciseActivity"/>
+            android:name="com.ex.hobby.ExerciseActivity"/>
         <activity
-            android:name=".MakeupActivity"/>
+            android:name="com.ex.hobby.MakeupActivity"/>
         <activity
-            android:name=".TravelActivity"/>
-        --<activity
-            android:name=".MainActivity"/>
+            android:name="com.ex.hobby.TravelActivity"/>
         <activity
-            android:name=".SignupActivity2"/>
+            android:name="com.ex.hobby.MainActivity"/>
         <activity
-            android:name=".ui.com.UploadActivity"/>
+            android:name="com.ex.hobby.SignupActivity2"/>
         <activity
-            android:name=".ui.com.ReviewActivity"/>
+            android:name="com.ex.hobby.ui.com.UploadActivity"/>
+        <activity
+            android:name="com.ex.hobby.ui.com.ReviewActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"

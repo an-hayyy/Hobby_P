@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
-        applicationId "com.example.android1016"
+        applicationId "com.ex.hobby.android1016"
         minSdkVersion 27
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -49,6 +49,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.google.firebase:firebase-database:19.5.1'
     implementation 'com.android.support:support-annotations:28.0.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0' //하단메뉴바 아이콘 색 변경
     implementation 'com.google.firebase:firebase-auth:20.0.1'
     implementation 'de.hdodenhof:circleimageview:3.1.0'

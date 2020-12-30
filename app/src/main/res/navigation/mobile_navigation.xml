@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.android1016.ui.home.HomeFragment"
+        android:name="com.ex.hobby.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_com"
-        android:name="com.example.android1016.ui.com.ComFragment"
+        android:name="com.ex.hobby.ui.com.ComFragment"
         android:label="@string/title_com"
         tools:layout="@layout/fragment_com" />
 
     <fragment
         android:id="@+id/navigation_my"
-        android:name="com.example.android1016.ui.my.MyFragment"
+        android:name="com.ex.hobby.ui.my.MyFragment"
         android:label="마이"
         tools:layout="@layout/fragment_my" />
 </navigation>
