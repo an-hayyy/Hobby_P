@@ -115,7 +115,7 @@
                 android:id="@+id/text_cook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="37dp"
+                android:layout_marginStart="45dp"
                 android:layout_marginTop="5dp"
                 android:text="요리"
                 android:textColor="#A593e0"
