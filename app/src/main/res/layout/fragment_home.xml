@@ -26,7 +26,7 @@
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewpager"
                 android:layout_width="wrap_content"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
             <me.relex.circleindicator.CircleIndicator
                 android:id="@+id/indicator"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="15dp"
                 app:ci_drawable="@drawable/black_radius"
                 app:ci_height="7dp"
                 app:ci_margin="4dp"
@@ -48,9 +48,9 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mcook3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="56dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="35dp"
                 android:src="@drawable/mcook3"
                 app:civ_border_color="#a593e0"
                 app:layout_constraintEnd_toStartOf="@+id/image_mdesign1"
@@ -61,8 +61,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mdesign1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/mdesign1"
                 app:layout_constraintEnd_toStartOf="@+id/image_mdrawing2"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -72,8 +72,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mdrawing2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/mdrawing2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -82,9 +82,9 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mexercise1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="56dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/mexercise1"
                 app:layout_constraintEnd_toStartOf="@+id/image_mmakeup1"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -93,8 +93,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mmakeup1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/mmakeup1"
                 app:layout_constraintEnd_toStartOf="@+id/image_mtravel1"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -103,8 +103,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image_mtravel1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/mtravel1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -115,12 +115,11 @@
                 android:id="@+id/text_cook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="5dp"
                 android:text="요리"
                 android:textColor="#A593e0"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.165"
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image_mcook3" />
 
@@ -128,10 +127,10 @@
                 android:id="@+id/text_design"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="76dp"
+                android:layout_marginStart="80dp"
                 android:text="수공예"
                 android:textColor="#A593e0"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 app:layout_constraintStart_toEndOf="@+id/text_cook"
                 app:layout_constraintTop_toTopOf="@+id/text_cook"
                 tools:ignore="MissingConstraints" />
@@ -140,10 +139,10 @@
                 android:id="@+id/text_drawing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="88dp"
+                android:layout_marginStart="60dp"
                 android:text="미술"
                 android:textColor="#A593e0"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 app:layout_constraintStart_toEndOf="@+id/text_design"
                 app:layout_constraintTop_toTopOf="@+id/text_design"
                 tools:ignore="MissingConstraints" />
@@ -152,10 +151,10 @@
                 android:id="@+id/text_exercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="5dp"
                 android:text="운동"
                 android:textColor="#A593e0"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="@+id/text_cook"
                 app:layout_constraintTop_toBottomOf="@+id/image_mexercise1"
                 tools:ignore="MissingConstraints" />
@@ -167,8 +166,7 @@
                 android:layout_marginStart="88dp"
                 android:text="뷰티"
                 android:textColor="#A593e0"
-
-                android:textSize="20sp"
+                android:textSize="17sp"
                 app:layout_constraintStart_toEndOf="@+id/text_exercise"
                 app:layout_constraintTop_toTopOf="@+id/text_exercise"
                 tools:ignore="MissingConstraints" />
@@ -179,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:text="여행"
                 android:textColor="#A593e0"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="@+id/text_drawing"
                 app:layout_constraintTop_toTopOf="@+id/text_makeup"
                 tools:ignore="MissingConstraints" />
